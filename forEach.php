@@ -9,11 +9,16 @@ $contasCorrentes = [
         'titular' => 'Milena',
         'saldo' => 10
     ],
-    99999999999 => [
+    99999999998 => [
         'titular' => 'Junior',
         'saldo' => 1
     ]
 ];
+$contasCorrentes[] = [
+    'titular' => 'Minuska',
+    'saldo' => 150
+];
+// AutoIncrementa.
 foreach($contasCorrentes as $cpf => $conta){
-    echo $cpf . PHP_EOL;
+    echo $cpf . " " . $conta['titular'] . PHP_EOL;
 }
